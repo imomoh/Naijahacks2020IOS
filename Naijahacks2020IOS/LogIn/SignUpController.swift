@@ -1,0 +1,39 @@
+//
+//  SignUpController.swift
+//  Naijahacks2020IOS
+//
+//  Created by Ibrahim Momoh on 11/29/20.
+//
+
+import UIKit
+
+class SignUpController: UIViewController {
+
+   
+    
+    @IBOutlet var usernameField: UITextField!
+    @IBOutlet var emailField: UITextField!
+    @IBOutlet var passwordField: UITextField!
+    @IBOutlet var re_passwordField: UITextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func dismiss(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

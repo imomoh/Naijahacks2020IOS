@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,16 @@
 		5985AC20257494C700535A53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5985AC1E257494C700535A53 /* Main.storyboard */; };
 		5985AC22257494CC00535A53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5985AC21257494CC00535A53 /* Assets.xcassets */; };
 		5985AC25257494CC00535A53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5985AC23257494CC00535A53 /* LaunchScreen.storyboard */; };
+		5985AC8C2574AE4C00535A53 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5985AC8B2574AE4C00535A53 /* SignUpController.swift */; };
+		5985AC8F2574B00F00535A53 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5985AC8E2574B00F00535A53 /* LogInController.swift */; };
+		5985AC922574B10500535A53 /* spinnerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5985AC912574B10500535A53 /* spinnerExtension.swift */; };
+		CF3B591295FE5687B35B9F06 /* Pods_Naijahacks2020IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5399E5A89D046224928CEDF5 /* Pods_Naijahacks2020IOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		418B43EBA1133509C71E703A /* Pods-Naijahacks2020IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naijahacks2020IOS.debug.xcconfig"; path = "Target Support Files/Pods-Naijahacks2020IOS/Pods-Naijahacks2020IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4F0374327AF7CBA5F718E85D /* Pods-Naijahacks2020IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Naijahacks2020IOS.release.xcconfig"; path = "Target Support Files/Pods-Naijahacks2020IOS/Pods-Naijahacks2020IOS.release.xcconfig"; sourceTree = "<group>"; };
+		5399E5A89D046224928CEDF5 /* Pods_Naijahacks2020IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Naijahacks2020IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5985AC15257494C700535A53 /* Naijahacks2020IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Naijahacks2020IOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5985AC18257494C700535A53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5985AC1A257494C700535A53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		5985AC21257494CC00535A53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5985AC24257494CC00535A53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5985AC26257494CC00535A53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5985AC8B2574AE4C00535A53 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		5985AC8E2574B00F00535A53 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
+		5985AC912574B10500535A53 /* spinnerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spinnerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF3B591295FE5687B35B9F06 /* Pods_Naijahacks2020IOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15E4323980092DE3BAE2EE1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				418B43EBA1133509C71E703A /* Pods-Naijahacks2020IOS.debug.xcconfig */,
+				4F0374327AF7CBA5F718E85D /* Pods-Naijahacks2020IOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5985AC0C257494C700535A53 = {
 			isa = PBXGroup;
 			children = (
 				5985AC17257494C700535A53 /* Naijahacks2020IOS */,
 				5985AC16257494C700535A53 /* Products */,
+				15E4323980092DE3BAE2EE1A /* Pods */,
+				8472D87923D47A1EB29DD08A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +78,42 @@
 		5985AC17257494C700535A53 /* Naijahacks2020IOS */ = {
 			isa = PBXGroup;
 			children = (
+				5985AC892574AC9000535A53 /* LogIn */,
+				5985AC702574A34000535A53 /* Utillity */,
 				5985AC18257494C700535A53 /* AppDelegate.swift */,
 				5985AC1A257494C700535A53 /* SceneDelegate.swift */,
-				5985AC1C257494C700535A53 /* ViewController.swift */,
-				5985AC1E257494C700535A53 /* Main.storyboard */,
 				5985AC21257494CC00535A53 /* Assets.xcassets */,
 				5985AC23257494CC00535A53 /* LaunchScreen.storyboard */,
 				5985AC26257494CC00535A53 /* Info.plist */,
 			);
 			path = Naijahacks2020IOS;
+			sourceTree = "<group>";
+		};
+		5985AC702574A34000535A53 /* Utillity */ = {
+			isa = PBXGroup;
+			children = (
+				5985AC912574B10500535A53 /* spinnerExtension.swift */,
+			);
+			path = Utillity;
+			sourceTree = "<group>";
+		};
+		5985AC892574AC9000535A53 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				5985AC1C257494C700535A53 /* ViewController.swift */,
+				5985AC1E257494C700535A53 /* Main.storyboard */,
+				5985AC8B2574AE4C00535A53 /* SignUpController.swift */,
+				5985AC8E2574B00F00535A53 /* LogInController.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		8472D87923D47A1EB29DD08A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5399E5A89D046224928CEDF5 /* Pods_Naijahacks2020IOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +123,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5985AC29257494CC00535A53 /* Build configuration list for PBXNativeTarget "Naijahacks2020IOS" */;
 			buildPhases = (
+				9156D83928AC9BD9A26393DD /* [CP] Check Pods Manifest.lock */,
 				5985AC11257494C700535A53 /* Sources */,
 				5985AC12257494C700535A53 /* Frameworks */,
 				5985AC13257494C700535A53 /* Resources */,
+				20820BE2DB6E1AFCCBBE80FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +183,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20820BE2DB6E1AFCCBBE80FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Naijahacks2020IOS/Pods-Naijahacks2020IOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Naijahacks2020IOS/Pods-Naijahacks2020IOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Naijahacks2020IOS/Pods-Naijahacks2020IOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9156D83928AC9BD9A26393DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Naijahacks2020IOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5985AC11257494C700535A53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,7 +232,10 @@
 			files = (
 				5985AC1D257494C700535A53 /* ViewController.swift in Sources */,
 				5985AC19257494C700535A53 /* AppDelegate.swift in Sources */,
+				5985AC8F2574B00F00535A53 /* LogInController.swift in Sources */,
 				5985AC1B257494C700535A53 /* SceneDelegate.swift in Sources */,
+				5985AC8C2574AE4C00535A53 /* SignUpController.swift in Sources */,
+				5985AC922574B10500535A53 /* spinnerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +379,7 @@
 		};
 		5985AC2A257494CC00535A53 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 418B43EBA1133509C71E703A /* Pods-Naijahacks2020IOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +399,7 @@
 		};
 		5985AC2B257494CC00535A53 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F0374327AF7CBA5F718E85D /* Pods-Naijahacks2020IOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
