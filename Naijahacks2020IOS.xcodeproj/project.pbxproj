@@ -16,6 +16,7 @@
 		5985AC8C2574AE4C00535A53 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5985AC8B2574AE4C00535A53 /* SignUpController.swift */; };
 		5985AC8F2574B00F00535A53 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5985AC8E2574B00F00535A53 /* LogInController.swift */; };
 		5985AC922574B10500535A53 /* spinnerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5985AC912574B10500535A53 /* spinnerExtension.swift */; };
+		5985AC952574B96A00535A53 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5985AC942574B96A00535A53 /* FeedViewController.swift */; };
 		CF3B591295FE5687B35B9F06 /* Pods_Naijahacks2020IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5399E5A89D046224928CEDF5 /* Pods_Naijahacks2020IOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		5985AC8B2574AE4C00535A53 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		5985AC8E2574B00F00535A53 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
 		5985AC912574B10500535A53 /* spinnerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spinnerExtension.swift; sourceTree = "<group>"; };
+		5985AC942574B96A00535A53 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		5985AC892574AC9000535A53 /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
+				5985AC942574B96A00535A53 /* FeedViewController.swift */,
 				5985AC1C257494C700535A53 /* ViewController.swift */,
 				5985AC1E257494C700535A53 /* Main.storyboard */,
 				5985AC8B2574AE4C00535A53 /* SignUpController.swift */,
@@ -236,6 +239,7 @@
 				5985AC1B257494C700535A53 /* SceneDelegate.swift in Sources */,
 				5985AC8C2574AE4C00535A53 /* SignUpController.swift in Sources */,
 				5985AC922574B10500535A53 /* spinnerExtension.swift in Sources */,
+				5985AC952574B96A00535A53 /* FeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
